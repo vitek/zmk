@@ -1,0 +1,7 @@
+file_format: "1"
+id: crutch60
+name: Crutch60
+type: shield
+requires: [pro_micro]
+features:
+  - keys

@@ -3,43 +3,11 @@
  *
  * SPDX-License-Identifier: MIT
  */
-//#include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <layouts/common/60percent/ansi.dtsi>
 
 #define GPIO_ROW (GPIO_ACTIVE_LOW)
 #define GPIO_COL (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
-
-#if 0
-/ {
-    chosen {
-        zmk,kscan = &kscan0;
-        };
-#if 0
-    default_transform: keymap_transform_0 {
-        compatible = "zmk,matrix-transform";
-        columns = <1>;
-        rows = <1>;
-        map = <
-                RC(0,0)
-        >;
-    };
-#endif
-    kscan0: kscan_0 {
-        compatible = "zmk,kscan-gpio-matrix";
-        wakeup-source;
-        diode-direction = "col2row";
-
-        col-gpios
-            = <&gpio0 10 GPIO_ROW> // col 8
-            ;
-
-        row-gpios
-            = <&gpio0 24 GPIO_COL> // row 0
-            ;
-        };
-};
-#endif
 
 / {
     chosen {

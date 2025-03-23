@@ -1,0 +1,8 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_CRUTCH60
+
+config ZMK_KEYBOARD_NAME
+    default "Crutch60"
+endif
